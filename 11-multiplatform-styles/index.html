@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=360, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+
+  <title>Memory Game</title>
+
+  <link href="../components/1reset.css" type="text/css" rel="stylesheet" />
+  <link href="../components/1grids.css" type="text/css" rel="stylesheet" />
+  <link href="../components/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <div class="memory-game">
+
+    <div class="memory-game__game-page box">
+      <div class="memory-game__life-container box">
+        <div class="memory-game__life">
+          <i class="fa fa-heart" aria-hidden="true"></i>
+        </div> <!-- repeated by js -->
+      </div>
+      <div class="memory-game__title">
+        Memory Game ;)
+      </div>
+      <div class="memory-game__card-container box">
+        <div class="memory-game__card box">
+          <div class="memory-game__card__front-face">
+          </div>
+          <div class="memory-game__card__back-face">
+            <i class="fa" aria-hidden="true"></i>
+          </div>
+        </div> <!-- repeated by js -->
+      </div>
+
+      <div class="memory-game__restart-btn memory-game__btn">
+        restart
+      </div>
+    </div>
+
+    <div class="memory-game__start-page memory-game__page active">
+      <div class="memory-game__logo">
+        <i class="fa fa-gamepad" aria-hidden="true"></i>
+      </div>
+      <div class="memory-game__start-btn memory-game__btn">
+        start
+      </div>
+    </div>
+
+    <div class="memory-game__loose-page memory-game__page">
+      <div class="memory-game__loose-logo memory-game__logo">
+        <i class="fa fa-thumbs-o-down" aria-hidden="true"></i>
+      </div>
+      <div class="memory-game__restart-btn memory-game__btn">
+        try again
+      </div>
+    </div>
+
+    <div class="memory-game__win-page memory-game__page">
+      <div class="memory-game__win-logo memory-game__logo">
+        <i class="fa fa-smile-o fa-spin" aria-hidden="true"></i>
+      </div>
+      <div class="memory-game__restart-btn memory-game__btn">
+        Restart ;)
+      </div>
+    </div>
+
+
+  </div>
+
+  <script type="text/javascript" src="../components/zepto.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
