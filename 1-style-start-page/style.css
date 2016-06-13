@@ -1,0 +1,99 @@
+body {
+  background-color: hsl(180, 10%, 95%);
+  font-size: 10px;
+}
+
+.memory-game {
+}
+
+.memory-game__game-page {
+  display: none;
+}
+
+.memory-game__lifes {
+
+}
+
+.memory-game__life-icon {
+
+}
+
+.memory-game__title {
+
+}
+
+.memory-game__card-container {
+
+}
+
+.memory-game__card {
+
+}
+
+.memory-game__card__front-face {
+
+}
+
+.memory-game__card__back-face {
+
+}
+
+.memory-game__restart-btn {
+
+}
+
+.memory-game__start-page {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+
+  background-color: hsl(180, 10%, 95%);
+  padding-top: 11vh;
+}
+
+.memory-game__logo {
+  font-size: 23em;
+  text-align: center;
+  color: hsl(200, 80%, 15%);
+}
+
+.memory-game__btn {
+  font-size: 3.5em;
+  display: table;
+  padding: 0.3em 0.9em;
+  color: hsl(180, 10%, 95%);
+  background-color: hsl(200, 80%, 15%);
+  border-radius: 0.2em;
+  margin: 1.8em auto 0;
+  text-transform: uppercase;
+}
+
+.memory-game__start-btn {
+
+}
+
+.memory-game__loose-page {
+  display: none;
+}
+
+.memory-game__loose-logo {
+
+}
+
+.memory-game__restart-btn {
+
+}
+
+.memory-game__win-page {
+  display: none;
+}
+
+.memory-game__win-logo {
+
+}
+
+.memory-game__restart-btn {
+
+}
