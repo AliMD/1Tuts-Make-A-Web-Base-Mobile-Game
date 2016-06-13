@@ -1,0 +1,159 @@
+body {
+  background-color: hsl(180, 10%, 95%);
+  font-size: 10px;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.memory-game {
+}
+
+.memory-game__game-page {
+
+}
+
+.memory-game__lifes {
+
+}
+
+.memory-game__life-icon {
+
+}
+
+.memory-game__title {
+  color: hsl(200, 80%, 15%);
+  font-size: 3.2em;
+  margin-top: 7vh;
+  text-align: center;
+}
+
+.memory-game__card-container {
+  width: 32.8em;
+  margin: 4vh auto;
+}
+
+.memory-game__card {
+  font-size: 6.4em;
+  float: left;
+  perspective: 500px;
+  perspective-origin: center center;
+  transform-style: preserve-3d;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.4em;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin: 0.1em;
+}
+
+.memory-game__card.select {
+  z-index: 2;
+}
+
+
+.memory-game__card.select .memory-game__card__front-face,
+.memory-game__card.select .memory-game__card__back-face {
+  transition: all 250ms;
+}
+.memory-game__card.select .memory-game__card__front-face {
+  transform: rotateY(180deg);
+}
+
+.memory-game__card.select .memory-game__card__back-face {
+  transform: rotateY(360deg);
+}
+
+.memory-game__card__front-face,
+.memory-game__card__back-face {
+  width: inherit;
+  height: inherit;
+  background-color: #44A;
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 900ms;
+  backface-visibility: hidden;
+  box-shadow: 0 0 5px 0 black;
+}
+
+.memory-game__card__front-face {
+  z-index: 2;
+
+}
+
+.memory-game__card__back-face {
+  z-index: 1;
+  transform: rotateY(180deg);
+}
+
+
+.memory-game__restart-btn.memory-game__btn {
+  font-size: 2em;
+  margin-top: 0;
+}
+
+.memory-game__page {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+
+  background-color: hsl(180, 10%, 95%);
+  padding-top: 11vh;
+}
+
+.memory-game__start-page {
+  display: none;
+}
+
+.memory-game__logo {
+  font-size: 23em;
+  text-align: center;
+  color: hsl(200, 80%, 15%);
+}
+
+.memory-game__btn {
+  font-size: 3.5em;
+  display: table;
+  padding: 0.3em 0.9em;
+  color: hsl(180, 10%, 95%);
+  background-color: hsl(200, 80%, 15%);
+  border-radius: 0.2em;
+  margin: 1.8em auto 0;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.memory-game__start-btn {
+
+}
+
+.memory-game__loose-page {
+  display: none;
+}
+
+.memory-game__loose-logo {
+
+}
+
+.memory-game__restart-btn {
+
+}
+
+.memory-game__win-page {
+  display: none;
+}
+
+.memory-game__win-logo {
+
+}
+
+.memory-game__restart-btn {
+
+}
